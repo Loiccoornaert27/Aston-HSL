@@ -1,0 +1,15 @@
+.palettes{
+    display: flex;
+    flex-direction: row;
+
+    &_sliders{
+        display: flex;
+        flex-direction: column;
+        gap:2px;
+    }
+
+    &_texts{
+        display: flex;
+        flex-direction: column;
+    }
+}
