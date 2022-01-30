@@ -1,6 +1,29 @@
+:root{
+    --clr-primary:hsl(115,20,60);
+    --clr-secondary: hsl(145,20,60);
+    --clr-tertiary: hsl(295,20,60);
+}
+
 .palettes{
     display: flex;
     flex-direction: row;
+
+    &_main{
+        background-color: var(--clr-primary);
+        width: 15em;
+        height: 15em;
+    }
+    &_analog{
+        background-color: var(--clr-secondary);
+        width: 15em;
+        height: 15em;
+    }
+
+    &_compl{
+        background-color: var(--clr-tertiary);
+        width: 15em;
+        height: 15em;
+    }
 
     &_sliders{
         display: flex;
