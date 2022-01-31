@@ -1,23 +1,23 @@
 <div class="palettes">
-    <div class="palettes_main"></div>
-    <div class="palettes_analog"></div>
-    <div class="palettes_compl"></div>
+    <div class="palettes_main" [style]="main"></div>
+    <div class="palettes_analog" [style]="analog"></div>
+    <div class="palettes_compl" [style]="comp"></div>
     <div clas="palettes_sliders">
         <div>
             <label for="hue">H</label>
-            <input type="range" id="hue" name="hue" min="0" max="359" oninput="this.nextElementSibling.value = this.value" >
+            <input  [ngModel]="h" type="range" id="hue" name="hue" min="0" max="359"  oninput="colorChange()" >
             <input type="text" id="huet" oninput="this.previousElementSibling.value= this.value" >
         </div>
 
         <div>
             <label for="saturation">S</label>
-            <input type="range" id="saturation" name="saturation" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+            <input [ngModel]="s" type="range" id="saturation" name="saturation" min="0" max="100" oninput="colorChange()">
             <input type="text" id="saturationt" oninput="this.previousElementSibling.value= this.value" >
         </div>
 
         <div>
             <label for="light">L</label>
-            <input type="range" id="light" name="light" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+            <input [ngModel]="l" type="range" id="light" name="light" min="0" max="100" oninput="colorChange()">
             <input type="text" id="lightt" oninput="this.previousElementSibling.value= this.value">
         </div>
     </div>
@@ -26,5 +26,5 @@
 </div>
 
 <div>
-    <p> .root: --clr-primary : hsl({{hue}},{{sat}},{{light}}</p>
+    <p></p>
 </div>

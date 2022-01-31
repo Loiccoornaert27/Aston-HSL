@@ -1,6 +1,5 @@
-import { RecursiveAstVisitor } from '@angular/compiler/src/output/output_ast';
-import { Component, HostBinding, OnInit } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-palette',
@@ -9,31 +8,29 @@ import { ReactiveFormsModule } from '@angular/forms';
 })
 export class PaletteComponent implements OnInit {
 
-  @HostBinding ("style.--main-hue")
-  hue !: number;
+  h: number=100;
 
-  @HostBinding ("style.--main-sat")
-  sat !: number;
+  s: number =20;
 
-  @HostBinding ("style.--main-light")
-  light !: number;
+  l: number=60;
+
+  main : string = `background-colour : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
+  analog : string = `background-colour : hsl( ${this.h+30}, ${this.s}%, ${this.l}%)`;
+  comp : string = `background-colour : hsl( ${this.h+180}, ${this.s}%, ${this.l}%)`;
+
   
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  changeHue(hue:number):void{
-     this.hue=hue;
+  colorChange():void{
+    this.main= `background-colour : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
+    this.analog= `background-colour : hsl( ${this.h+30}, ${this.s}%, ${this.l}%)`;
+    this.comp = `background-colour : hsl( ${this.h+180}, ${this.s}%, ${this.l}%)`;
+
   }
 
-  changeSat(sat:number):void{
-    this.sat=sat;
-  }
-
-  changeLight(light:number):void{
-    this.light=light;
-  }
 
 
 }
