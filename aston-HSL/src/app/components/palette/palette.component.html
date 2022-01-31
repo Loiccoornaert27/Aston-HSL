@@ -5,19 +5,19 @@
     <div clas="palettes_sliders">
         <div>
             <label for="hue">H</label>
-            <input type="range" id="hue" name="hue" min="0" max="359" oninput="this.nextElementSibling.value = this.value">
-            <input type="text" id="huet" oninput="this.previousElementSibling.value= this.value">
+            <input type="range" id="hue" name="hue" min="0" max="359" oninput="this.nextElementSibling.value = this.value" oninput="changeHue(this.value)">
+            <input type="text" id="huet" oninput="this.previousElementSibling.value= this.value" >
         </div>
 
         <div>
             <label for="saturation">S</label>
-            <input type="range" id="saturation" name="saturation" min="0" max="359" oninput="this.nextElementSibling.value = this.value">
-            <input type="text" id="saturationt" oninput="this.previousElementSibling.value= this.value">
+            <input type="range" id="saturation" name="saturation" min="0" max="100" oninput="this.nextElementSibling.value = this.value" oninput="changeSat(this.value)">
+            <input type="text" id="saturationt" oninput="this.previousElementSibling.value= this.value" >
         </div>
 
         <div>
             <label for="light">L</label>
-            <input type="range" id="light" name="light" min="0" max="359" oninput="this.nextElementSibling.value = this.value">
+            <input type="range" id="light" name="light" min="0" max="100" oninput="this.nextElementSibling.value = this.value" oninput="changeLight(this.value)">
             <input type="text" id="lightt" oninput="this.previousElementSibling.value= this.value">
         </div>
     </div>
