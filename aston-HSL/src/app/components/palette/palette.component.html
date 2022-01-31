@@ -1,25 +1,24 @@
 <div class="palettes">
-    <span class="palettes_main" [style]="firstBack"></span>
-    <span class="palettes_analog" [style]="secondBack"></span>
-    <span class="palettes_compl" [style]="thirdBack"></span>
-    <div clas="palettes_sliders">
-        <div>
+        <span class="palettes_main" [style]="firstBack"></span>
+        <span class="palettes_analog" [style]="secondBack"></span>
+        <span class="palettes_compl" [style]="thirdBack"></span>
+    <div class="palettes_sliders">
+        <div class="palettes_sliders_value">
             <label for="hue">H</label>
             <input max="360" [(ngModel)]="h" type="range" id="hue" name="hue" (mousemove)="colorChange()">
-           <p>{{h}}</p>
+            <input [(ngModel)]="h" type="text" (keyup.enter)="colorChange">
         </div>
 
-        <div>
+        <div class="palettes_sliders_value">
             <label for="saturation">S</label>
-            <input [(ngModel)]="s" max="100" type="range" id="saturation" name="saturation" 
-                (mousemove)="colorChange()">
-            <p>{{s}}</p>
+            <input [(ngModel)]="s" max="100" type="range" id="saturation" name="saturation" (mousemove)="colorChange()">
+            <input [(ngModel)]="s" type="text" (keyup.enter)="colorChange">
         </div>
 
-        <div>
+        <div class="palettes_sliders_value">
             <label for="light">L</label>
-            <input max="100" [(ngModel)]="l" type="range" id="light" name="light"  (mousemove)="colorChange()">
-            <p>{{l}}</p>
+            <input max="100" [(ngModel)]="l" type="range" id="light" name="light" (mousemove)="colorChange()">
+            <input [(ngModel)]="l" type="text" (keyup.enter)="colorChange">
         </div>
     </div>
 
