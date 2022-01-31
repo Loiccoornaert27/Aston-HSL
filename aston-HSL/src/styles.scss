@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --main-hue : 115;
+    --main-sat : 20;
+    --main-light : 60;
+    --clr-primary:hsl(--main-hue,--main-sat,--main-light);
+    --clr-secondary: hsl(calc(--main-hue+30),--main-sat,--main-light);
+    --clr-tertiary: hsl(calc(--main-hue+180),main-sat,main-light);
+}

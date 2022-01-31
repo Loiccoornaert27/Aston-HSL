@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaletteComponent implements OnInit {
 
+  hue !: number;
+  sat !: number;
+  light !: number;
+  
   constructor() { }
 
   ngOnInit(): void {
