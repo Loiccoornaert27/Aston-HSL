@@ -8,26 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaletteComponent implements OnInit {
 
-  h: number=100;
+  h: number = 100;
 
-  s: number =20;
+  s: number = 20;
 
-  l: number=60;
+  l: number = 60;
 
-  main : string = `background-colour : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
-  analog : string = `background-colour : hsl( ${this.h+30}, ${this.s}%, ${this.l}%)`;
-  comp : string = `background-colour : hsl( ${this.h+180}, ${this.s}%, ${this.l}%)`;
+  firstBack: string = `background-colour : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
+  secondBack: string = `background-colour : hsl( ${this.h + 30}, ${this.s}%, ${this.l}%)`;
+  thirdBack: string = `background-colour : hsl( ${this.h + 180}, ${this.s}%, ${this.l}%)`;
 
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  colorChange():void{
-    this.main= `background-colour : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
-    this.analog= `background-colour : hsl( ${this.h+30}, ${this.s}%, ${this.l}%)`;
-    this.comp = `background-colour : hsl( ${this.h+180}, ${this.s}%, ${this.l}%)`;
+  colorChange(): void {
+    this.firstBack = `background-colour : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
+    this.secondBack = `background-colour : hsl( ${this.h + 30}, ${this.s}%, ${this.l}%)`;
+    this.thirdBack = `background-colour : hsl( ${this.h + 180}, ${this.s}%, ${this.l}%)`;
 
   }
 
