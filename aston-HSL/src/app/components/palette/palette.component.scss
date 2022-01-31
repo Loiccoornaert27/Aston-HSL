@@ -2,7 +2,24 @@
 
 .palettes{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+
+    &_main{
+        
+        width: 10em;
+        height: 10em;
+    }
+    &_analog{
+        
+        width: 10em;
+        height: 10em;
+    }
+
+    &_compl{
+        
+        width: 10em;
+        height: 10em;
+    }
 
     &_sliders{
         display: flex;

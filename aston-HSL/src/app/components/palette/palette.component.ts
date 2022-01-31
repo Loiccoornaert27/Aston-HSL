@@ -14,9 +14,9 @@ export class PaletteComponent implements OnInit {
 
   l: number = 60;
 
-  firstBack: string = `background-colour : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
-  secondBack: string = `background-colour : hsl( ${this.h + 30}, ${this.s}%, ${this.l}%)`;
-  thirdBack: string = `background-colour : hsl( ${this.h + 180}, ${this.s}%, ${this.l}%)`;
+  firstBack: string = `background-color : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
+  secondBack: string = `background-color : hsl( ${this.h + 30}, ${this.s}%, ${this.l}%)`;
+  thirdBack: string = `background-color : hsl( ${this.h + 180}, ${this.s}%, ${this.l}%)`;
 
 
   constructor() { }
@@ -25,9 +25,9 @@ export class PaletteComponent implements OnInit {
   }
 
   colorChange(): void {
-    this.firstBack = `background-colour : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
-    this.secondBack = `background-colour : hsl( ${this.h + 30}, ${this.s}%, ${this.l}%)`;
-    this.thirdBack = `background-colour : hsl( ${this.h + 180}, ${this.s}%, ${this.l}%)`;
+    this.firstBack = `background-color : hsl( ${this.h}, ${this.s}%, ${this.l}%)`;
+    this.secondBack = `background-color : hsl( ${this.h + 30}, ${this.s}%, ${this.l}%)`;
+    this.thirdBack = `background-color : hsl( ${this.h + 180}, ${this.s}%, ${this.l}%)`;
 
   }
 

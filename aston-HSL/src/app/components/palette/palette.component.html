@@ -6,20 +6,20 @@
         <div>
             <label for="hue">H</label>
             <input max="360" [(ngModel)]="h" type="range" id="hue" name="hue" (mousemove)="colorChange()">
-            <!-- <input type="text" id="huet" oninput="this.previousElementSibling.value= this.value"> -->
+           <p>{{h}}</p>
         </div>
 
         <div>
             <label for="saturation">S</label>
             <input [(ngModel)]="s" max="100" type="range" id="saturation" name="saturation" 
                 (mousemove)="colorChange()">
-            <!-- <input type="text" id="saturationt" oninput="this.previousElementSibling.value= this.value"> -->
+            <p>{{s}}</p>
         </div>
 
         <div>
             <label for="light">L</label>
             <input max="100" [(ngModel)]="l" type="range" id="light" name="light"  (mousemove)="colorChange()">
-            <!-- <input type="text" id="lightt" oninput="this.previousElementSibling.value= this.value"> -->
+            <p>{{l}}</p>
         </div>
     </div>
 
